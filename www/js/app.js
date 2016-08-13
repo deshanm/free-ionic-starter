@@ -16,8 +16,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       cordova.plugins.Keyboard.disableScroll(true);
 
     }
-    window.ga.startTrackerWithId('UA-82430654-1');
-    window.ga.trackView('Start application')
+
+    if (window.ga) {
+      window.ga.startTrackerWithId('UA-82430654-1');
+      window.ga.trackView('Start application')
+    }
+
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
