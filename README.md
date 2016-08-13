@@ -24,10 +24,11 @@ I created this for testing purposes. you can download this for any purposes.
 
 ## Screen shots
 
-
-
+![Alt text](/../master/www/img/screen-shots/dash-screen-shot.png?raw=true "Dash Board")
+![Alt text](/../master/www/img/screen-shots/details-screen-shot.png?raw=true "Dash Board")
+![Alt text](/../master/www/img/screen-shots/list-screen-shot.png?raw=true "Dash Board")
 ## Reference
 
 ## Let me know
 
-let me know if you have any question... Also add an star.. Thank you..
+let me know if you have any question... Also add an star.. Thank you.. 
