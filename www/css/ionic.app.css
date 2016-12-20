@@ -4,17 +4,27 @@ To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
-*/
 
 $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
-$positive:                        #1d91f1 !default;
+$positive:                        #387ef5 !default;
 $calm:                            #11c1f3 !default;
 $balanced:                        #33cd5f !default;
 $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
-$dark:                            #020f25 !default;
+$dark:                            #444 !default;
+*/
+ion-tabs .tab-item {
+  background: #FFFFFF;
+  border-top: 4px solid #FFFFFF;
+  color: #d3dae2 !important; }
+  ion-tabs .tab-item .icon {
+    height: 28px;
+    font-size: 28px; }
+  ion-tabs .tab-item.tab-item-active {
+    color: #1568ff !important;
+    border-top: 4px solid #1568ff; }
 
 /*!
   Ionicons, v2.0.1
@@ -9815,3 +9825,52 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.chart-legend,
+.bar-legend,
+.line-legend,
+.pie-legend,
+.radar-legend,
+.polararea-legend,
+.doughnut-legend {
+  list-style-type: none;
+  margin-top: 5px;
+  text-align: center;
+  /* NOTE: Browsers automatically add 40px of padding-left to all lists, so we should offset that, otherwise the legend is off-center */
+  -webkit-padding-start: 0;
+  /* Webkit */
+  -moz-padding-start: 0;
+  /* Mozilla */
+  padding-left: 0;
+  /* IE (handles all cases, really, but we should also include the vendor-specific properties just to be safe) */ }
+
+.chart-legend li,
+.bar-legend li,
+.line-legend li,
+.pie-legend li,
+.radar-legend li,
+.polararea-legend li,
+.doughnut-legend li {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  padding: 2px 8px 2px 28px;
+  font-size: smaller;
+  cursor: default; }
+
+.chart-legend-icon,
+.bar-legend-icon,
+.line-legend-icon,
+.pie-legend-icon,
+.radar-legend-icon,
+.polararea-legend-icon,
+.doughnut-legend-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px; }
