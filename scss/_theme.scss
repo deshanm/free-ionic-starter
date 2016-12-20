@@ -128,9 +128,11 @@ $tab-icon-border-top-color: $brand-color;
 $tab-icon-bg: #FFFFFF;
 
 ion-tabs {
+
   .tab-item {
     background: $tab-icon-bg;
-    border-top: 4px solid $tab-icon-bg;
+
+    border-top: 3px solid $tab-icon-bg;
     color: #d3dae2 !important;
 
     .icon {
@@ -142,5 +144,87 @@ ion-tabs {
       color: $brand-color !important;
       border-top: 4px solid $tab-icon-border-top-color;
     }
+  }
+}
+
+//----------------------- ion header
+
+ion-header-bar{
+  background: white;
+  color:  $brand-color;
+}
+
+
+
+
+//----------------------- content
+ion-content{
+  background: #edf2f5;
+}
+
+
+
+//----------------------- Dash boar --------------------------------------------
+.dashboard-main-container{
+  padding-top: 10px;
+  background: white;
+    text-align: center;
+    h3{
+      color: $brand-color;
+    }
+  .avatar-conatainer{
+    position: relative;
+
+
+    img{
+      width: 125px;
+  height: 125px;
+  border-radius: 100%;
+      border: 2px solid #eff4ff;
+    }
+    .badge{
+      position: absolute;
+      top: 32px;
+      background: $brand-color;
+      border: 4px solid white;
+      padding: 18px 10px;
+      border-radius: 100%;
+      color: white;
+      font-weight: bold;
+      margin-left: -30px;
+    }
+
+  }
+  .slider-pager{
+    bottom: initial;
+    font-size: 10px;
+    .slider-pager-page{
+      color: $brand-color;
+      &.active{
+        font-size: 14px;
+      }
+    }
+
+  }
+  .box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+
+// -------- cart chartcard
+
+.chart-card{
+  &.card{
+    background: transparent;
+  }
+  .item{
+    box-shadow: none;
+    border:none;
+    border-radius: 4px;
+
+    /* padding: 11px; */
+    margin-bottom: 12px;
   }
 }

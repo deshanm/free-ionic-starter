@@ -2,34 +2,55 @@
   <ion-content>
 
     <div class="dashboard-main-container">
-      <div style="text-align:center">
-        <img style="width: 100px;border-radius:100%" ng-src="https://cdnil1.fiverrcdn.com/photos/29332844/original/programmer.jpg?1466411435">
+      <h3>Desh Atom</h3>
+      <div class="avatar-conatainer">
+        <span class="badge">10Xp</span>
+        <img ng-src="https://pbs.twimg.com/profile_images/773554095562956800/aX91t4kX_400x400.jpg">
+
       </div>
       <ion-slide-box on-slide-changed="slideHasChanged($index)">
         <ion-slide>
-          <div class="box blue"><h1>BLUE</h1></div>
+          <div class="box">
+            <h4>Awsome</h4>
+            <p>You are the most awsome persons <br />in the world</p>
+          </div>
         </ion-slide>
         <ion-slide>
-          <div class="box yellow"><h1>YELLOW</h1></div>
+          <div class="box">
+            <h4>Awsome</h4>
+            <p>You are the most awsome persons <br />in the world</p>
+          </div>
         </ion-slide>
         <ion-slide>
-          <div class="box pink"><h1>PINK</h1></div>
+          <div class="box">
+            <h4>Awsome</h4>
+            <p>You are the most awsome persons <br />in the world</p>
+          </div>
         </ion-slide>
       </ion-slide-box>
     </div>
 
 
 
-    <div class="card">
-     <div class="item item-divider">
-         A line chart
+    <div class="card chart-card">
+
+     <div class="item item-text-wrap">
+       <canvas id="doughnut" class="chart chart-doughnut"
+        legend="true" series="series" options="{showTooltips: false}"
+         data="xxdata" labels="xxlabels">
+       </canvas>
+
      </div>
+
+     <div class="item item-text-wrap">
+       <canvas id="bar" class="chart chart-line" data="graph.data" labels="graph.labels" series='graph.series'></canvas>
+
+
+</div>
      <div class="item item-text-wrap">
          <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" options="{showTooltips: false}"></canvas>
      </div>
-     <div class="item item-text-wrap">
-         <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" options="{showTooltips: false}"></canvas>
-     </div>
+
  </div>
 
 
