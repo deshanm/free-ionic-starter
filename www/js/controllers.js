@@ -48,38 +48,50 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 .controller('SocialCtrl', function($scope, Chats, $stateParams) {
-  $scope.chat = Chats.get($stateParams.chatId);
+
   $scope.items=[
     {
       img:'../img/icons/fb.svg',
       title: 'Facebook',
-      description: 'You have few messages from facebook'
+      count: 56,
+      color: '#375a95',
+      description: '<b>Donald Trump</b> has liked your status <i class="italic thin">"F*ck me I am Famous"</i> <span class="small"><b>13</b> min ago<span>'
     },
     {
       img:'../img/icons/youtube.svg',
       title: 'Youtube',
-      description: 'You have few messages from Youtube'
+      count: 10,
+      color: '#e52215',
+      description: '<b>Jay Garic</b> has commented on your proile <i class="italic thin">"How should I <b>buy</b> your app"</i>'
     },
     {
       img:'../img/icons/twitter.svg',
       title: 'Twitter',
-      description: 'You have few messages from Twitter'
+      count: 78,
+      color: '#2196f3',
+      description: '<b>NodeSphere and 6 others</b> liked your Retweet <span class="small thin"> Nov <b>9</b></span>'
     },
 
     {
       img:'../img/icons/snapchat.svg',
       title: 'SnapChat',
-      description: 'You have few messages from SnapChat'
+      count: 2,
+      color: '#b2af16',
+      description: 'You have few messages from <b>SnapChat<b> 12 min ago'
     },
     {
       img:'../img/icons/linkedin.svg',
       title: 'LinkedIn',
-      description: 'You have few messages from LinkedIn'
+      count: 65,
+      color: '#2285b6',
+      description: '<b>12</b> jobs may interest based on your <b>profile</b> - Overview'
     },
     {
       img:'../img/icons/pinterest.svg',
       title: 'Pinterest',
-      description: 'You have few messages from Pinterest'
+      count: 345,
+      color: '#bd0a1c',
+      description: '<b>Sarah Knight</b>, <b>Lisa Fox</b> and <b>48</b> other Pinned your pin <span class="small thin"><b>2</b> days ago</span>'
     },
   ]
 });

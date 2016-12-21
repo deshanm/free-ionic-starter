@@ -236,6 +236,33 @@ ion-content {
   border: 2px solid white;
 }
 
+.notify{
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 8px;
+  color: white;
+  opacity: 0.6;
+}
+.pull-right{
+  float: right;
+}
+
 .thin{
   font-weight: 300;
+}
+.italic{
+  font-style: italic;
+}
+.small{
+  font-size: 10px;
+}
+
+.social-list{
+  a{
+    &.item{
+      color: inherit;
+margin: 4px 6px;
+border-radius: 7px;
+    }
+  }
 }
