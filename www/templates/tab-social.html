@@ -2,25 +2,10 @@
   <ion-content>
     <div class="list">
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="cover.jpg">
-      <h2>Facebook</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="cover.jpg">
-      <h2>Twitter</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="cover.jpg">
-      <h2>Instagram</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="cover.jpg">
-      <h2>LinkedIn</h2>
-      <p>Nine Inch Nails</p>
+    <a class="item item-thumbnail-left" href="#" ng-repeat="item in items track by $index">
+      <img src="{{item.img}}">
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}</p>
     </a>
 
 </div>

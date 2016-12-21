@@ -127,11 +127,11 @@ $brand-color: #1568ff;
 $tab-icon-border-top-color: $brand-color;
 $tab-icon-bg: #FFFFFF;
 
-ion-tabs {
+$gray-l1: #37474F;
 
+ion-tabs {
   .tab-item {
     background: $tab-icon-bg;
-
     border-top: 3px solid $tab-icon-bg;
     color: #d3dae2 !important;
 
@@ -146,85 +146,96 @@ ion-tabs {
     }
   }
 }
-
 //----------------------- ion header
-
-ion-header-bar{
+ion-header-bar {
   background: white;
-  color:  $brand-color;
+  color: $brand-color;
 }
-
-
-
-
 //----------------------- content
-ion-content{
+ion-content {
   background: #edf2f5;
 }
-
-
-
 //----------------------- Dash boar --------------------------------------------
-.dashboard-main-container{
+.dashboard-main-container {
   padding-top: 10px;
   background: white;
-    text-align: center;
-    h3{
-      color: $brand-color;
-    }
-  .avatar-conatainer{
+  text-align: center;
+
+  h3 {
+    color: $gray-l1;
+  }
+
+  .avatar-conatainer {
     position: relative;
 
-
-    img{
+    img {
       width: 125px;
-  height: 125px;
-  border-radius: 100%;
+      height: 125px;
+      border-radius: 100%;
       border: 2px solid #eff4ff;
     }
-    .badge{
+
+    .badge {
       position: absolute;
-      top: 32px;
       background: $brand-color;
       border: 4px solid white;
-      padding: 18px 10px;
+      padding: 14px 6px;
       border-radius: 100%;
       color: white;
       font-weight: bold;
       margin-left: -30px;
+      top: 64px;
+
     }
 
+    .badge-notify {
+      position: absolute;
+      margin-left: 100px;
+      top: 14px;
+    }
   }
-  .slider-pager{
+
+  .slider-pager {
     bottom: initial;
     font-size: 10px;
-    .slider-pager-page{
+
+    .slider-pager-page {
       color: $brand-color;
-      &.active{
+
+      &.active {
         font-size: 14px;
       }
     }
-
   }
-  .box{
+
+  .box {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-
-
 // -------- cart chartcard
-
-.chart-card{
-  &.card{
+.chart-card {
+  &.card {
     background: transparent;
   }
-  .item{
-    box-shadow: none;
-    border:none;
-    border-radius: 4px;
 
+  .item {
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
     /* padding: 11px; */
     margin-bottom: 12px;
   }
+}
+
+.badge-notify {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: #19b608;
+  border: 2px solid white;
+}
+
+.thin{
+  font-weight: 300;
 }

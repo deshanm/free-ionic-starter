@@ -38,7 +38,7 @@ ion-content {
   background: white;
   text-align: center; }
   .dashboard-main-container h3 {
-    color: #1568ff; }
+    color: #37474F; }
   .dashboard-main-container .avatar-conatainer {
     position: relative; }
     .dashboard-main-container .avatar-conatainer img {
@@ -48,14 +48,18 @@ ion-content {
       border: 2px solid #eff4ff; }
     .dashboard-main-container .avatar-conatainer .badge {
       position: absolute;
-      top: 32px;
       background: #1568ff;
       border: 4px solid white;
-      padding: 18px 10px;
+      padding: 14px 6px;
       border-radius: 100%;
       color: white;
       font-weight: bold;
-      margin-left: -30px; }
+      margin-left: -30px;
+      top: 64px; }
+    .dashboard-main-container .avatar-conatainer .badge-notify {
+      position: absolute;
+      margin-left: 100px;
+      top: 14px; }
   .dashboard-main-container .slider-pager {
     bottom: initial;
     font-size: 10px; }
@@ -76,6 +80,16 @@ ion-content {
   border-radius: 4px;
   /* padding: 11px; */
   margin-bottom: 12px; }
+
+.badge-notify {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: #19b608;
+  border: 2px solid white; }
+
+.thin {
+  font-weight: 300; }
 
 /*!
   Ionicons, v2.0.1
