@@ -15,6 +15,7 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+/*-===========================ion-tabs ======================================-*/
 ion-tabs .tab-item {
   background: #FFFFFF;
   border-top: 3px solid #FFFFFF;
@@ -26,13 +27,16 @@ ion-tabs .tab-item {
     color: #1568ff !important;
     border-top: 4px solid #1568ff; }
 
+/*-===========================ion-header-bar ================================-*/
 ion-header-bar {
   background: white;
   color: #1568ff; }
 
+/*-===========================ion-content ===================================-*/
 ion-content {
   background: #edf2f5; }
 
+/*-===========================.dashboard-main-container =====================-*/
 .dashboard-main-container {
   padding-top: 10px;
   background: white;
@@ -71,6 +75,7 @@ ion-content {
     padding-top: 20px;
     padding-bottom: 20px; }
 
+/*-=========================== chart-card  ==================================-*/
 .chart-card.card {
   background: transparent; }
 
@@ -80,13 +85,46 @@ ion-content {
   border-radius: 4px;
   /* padding: 11px; */
   margin-bottom: 12px; }
+  .chart-card .item.activated {
+    border-color: white; }
 
-.badge-notify {
-  width: 18px;
-  height: 18px;
+/*-=========================== social-list  ==================================-*/
+.social-list a.item {
+  color: inherit;
+  margin: 4px 6px;
+  border-radius: 7px; }
+  .social-list a.item.activated {
+    border-color: white;
+    background: white;
+    border-width: 3px; }
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------- Common ---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.item .badge {
+  right: 10px !important; }
+
+.item-note {
+  color: #8d95a2;
+  margin-right: 0;
+  font-size: 10px !important; }
+  .item-note.withcount {
+    margin-right: 22px; }
+
+.item .badge {
+  padding: 2px 7px !important; }
+  .item .badge.badge-balanced {
+    background-color: #0af248 !important; }
+
+.item-avatar-notify {
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
-  background: #19b608;
-  border: 2px solid white; }
+  background: #b8b8b8;
+  left: 16px;
+  top: 16px;
+  position: absolute;
+  border: 1px solid white; }
 
 .notify {
   padding: 2px 8px;
@@ -107,10 +145,33 @@ ion-content {
 .small {
   font-size: 10px; }
 
-.social-list a.item {
-  color: inherit;
-  margin: 4px 6px;
-  border-radius: 7px; }
+.chat-item {
+  background: #edf2f5 !important; }
+
+.green-notify {
+  background: #19b608; }
+
+.badge-notify {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: #19b608;
+  border: 2px solid white; }
+
+.box-blue {
+  color: #07193b; }
+  .box-blue h4 {
+    color: #2460ce; }
+
+.box-green {
+  color: #229116; }
+  .box-green h4 {
+    color: #14740a; }
+
+.box-red {
+  color: #a33f3f; }
+  .box-red h4 {
+    color: #c22323; }
 
 /*!
   Ionicons, v2.0.1
