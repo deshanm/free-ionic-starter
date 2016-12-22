@@ -3,17 +3,13 @@
     <div class="list">
       <div class="item item-remove-animate  chat-item item-avatar  " ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}" class="animated flipIxnX">
-
-        <!-- <div style="position:relative">
-          <span class="badge-notify"></span>
-        </div> -->
-        <span class="item-note" ng-class="{'withcount': chat.msgCount}" >
-            {{chat.time}}
-          </span>
+        <span class="item-note" ng-class="{'withcount': chat.msgCount}">
+          {{chat.time}}
+        </span>
         <h3>{{chat.name}}</h3>
-        <p style="color:#404d97; font-size:12px" class="animated fadeIn">{{chat.lastText}}</p>
+        <p style="color:#404d97; font-size:12px" class="animated fadeIn">{{chat.message}}</p>
         <p class="item-avatar-notify  animated " ng-class="{'green-notify': chat.online , 'flash': chat.online}"></p>
-<span class="badge badge-balanced">{{chat.msgCount}}</span>
+        <span class="badge badge-balanced">{{chat.msgCount}}</span>
       </div>
     </div>
 

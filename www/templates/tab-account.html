@@ -1,9 +1,32 @@
 <ion-view view-title="Account">
   <ion-content>
-    <ion-list>
-      <ion-toggle ng-model="settings.enableFriends">
-        Enable Friends
-      </ion-toggle>
-    </ion-list>
+    <div class="list">
+      <div class="card">
+        <div class="item item-text-wrap">
+          <h1 class="box-blue">Hi</h1>
+          <p class="small thin">
+            Are you looking for <b>More</b> Apps?.. Don't worry, You can access our sources from following ways. Help us to do more
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a class="item item-text-wrap" ng-href="mailto:deshatom@gmail.com?Subject=Custom App Request" target="_top" >
+          <h2 class="box-blue">For Business</h2>
+          <p class="small thin">
+            If you need <b>Cus</b><span class="thin">tom</span> <b>App</b> <span class="thin small">(with or without backend)</span>. Feel Free to drop an <b>Email</b>
+          </p>
+          <p class="email-text">deshatom@gmail.com</p>
+        </a>
+      </div>
+    </div>
+    <div class="list social-list">
+      <a class="item item-thumbnail-left item-text-wrap"  target="_blank" ng-repeat="item in items track by $index" ng-href="{{item.url}}">
+        <img class="animated zoomIn" src="{{item.img}}">
+        <h2  ng-style="{'color': item.color}">{{item.title}}
+          <span class="notify pull-right animated rubberBand" ng-style="{'background': item.color}">{{item.count}}</span>
+        </h2>
+        <p class="animated fadeIn" ng-bind-html="item.description"></p>
+      </a>
+    </div>
   </ion-content>
 </ion-view>

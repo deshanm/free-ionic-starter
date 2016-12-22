@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'chart.js','starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'chart.js', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'chart.js','starter.controllers', 'starter.s
 })
 
 
-.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -40,7 +40,7 @@ angular.module('starter', ['ionic', 'chart.js','starter.controllers', 'starter.s
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -59,39 +59,33 @@ angular.module('starter', ['ionic', 'chart.js','starter.controllers', 'starter.s
   })
 
   .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
+    url: '/chats',
+    views: {
+      'tab-chats': {
+        templateUrl: 'templates/tab-chats.html',
+        controller: 'ChatsCtrl'
       }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
+    }
+  })
 
-    .state('tab.social', {
-      url: '/social',
-      views: {
-        'tab-social': {
-          templateUrl: 'templates/tab-social.html',
-          controller: 'SocialCtrl'
-        }
+
+  .state('tab.social', {
+    url: '/social',
+    views: {
+      'tab-social': {
+        templateUrl: 'templates/tab-social.html',
+        controller: 'SocialCtrl'
       }
-    })
+    }
+  })
 
   .state('tab.account', {
     url: '/account',
     views: {
       'tab-account': {
-        templateUrl: 'templates/tab-account.html'
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
+
       }
     }
   });

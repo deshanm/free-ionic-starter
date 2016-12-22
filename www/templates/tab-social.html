@@ -1,16 +1,13 @@
 <ion-view view-title="Social">
   <ion-content>
     <div class="list social-list">
-
-    <a class="item item-thumbnail-left item-text-wrap"  ng-repeat="item in items track by $index">
-      <img class="animated zoomIn" src="{{item.img}}">
-      <h2  ng-style="{'color': item.color}">{{item.title}}
-        <span class="notify pull-right animated rubberBand" ng-style="{'background': item.color}">{{item.count}}</span>
-      </h2>
-      <p class="animated fadeIn" ng-bind-html="item.description"></p>
-    </a>
-
-</div>
+      <a class="item item-thumbnail-left item-text-wrap" ng-href="{{item.url}}" target="_blank"  ng-repeat="item in items track by $index">
+        <img class="animated zoomIn" src="{{item.img}}">
+        <h2  ng-style="{'color': item.color}">{{item.title}}
+          <span class="notify pull-right animated rubberBand" ng-style="{'background': item.color}">{{item.count}}</span>
+        </h2>
+        <p class="animated fadeIn" ng-bind-html="item.description"></p>
+      </a>
+    </div>
   </ion-content>
-
 </ion-view>
