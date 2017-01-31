@@ -3,6 +3,11 @@
 I created this for testing purposes. you can download this for any purposes. You also can see this on the IONIC MARKET
 [see in ionic market](http://market.ionic.io/starters/deshshatom-cool-ui)
 
+
+
+[![free-ionic-starter demo ](https://cdn-images-1.medium.com/max/2000/1*VR1MZvvjlLyEUiTXmLDKog.jpeg)](https://medium.com/@deshatom/ionic-free-starter-ui-ux-b2ab5ff41ae6#.kanier9o5)
+
+
 ## Installation
 
 1. Type in terminal or cmd " git clone  https://github.com/deshatom/free-ionic-starter.git " or download this project
