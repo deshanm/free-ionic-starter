@@ -10,9 +10,9 @@ I created this for testing purposes. you can download this for any purposes. You
 
 ## Installation
 
-1. Type in terminal or cmd " git clone  https://github.com/deshatom/free-ionic-starter.git " or download this project
+1. Type in terminal or cmd: `git clone  https://github.com/deshatom/free-ionic-starter.git` (or download this project)
 2. cd free-ionic-starter
-3. nmp install
+3. npm install
 4. bower install
 5. ionic serve
 
@@ -20,7 +20,7 @@ I created this for testing purposes. you can download this for any purposes. You
 
 1. ionic platform add android
 2. ionic build android
-3. ionic run androi
+3. ionic run android
 
 ## Run in ios (you must have mac)
 
